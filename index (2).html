@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Our Team</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            overflow-x: hidden;
+        }
+
+        /*Heading*/
+        h1{
+            text-align: center;
+            font-size: 55px;
+            margin: 55px 0 60px;
+            color: black;
+        }
+        /*Flexbox container*/
+        .team{
+            display: flex;
+            flex-direction: row;
+            gap: 36px;
+            width: max-content;
+        }
+        /*Profile Card*/
+        .card{
+            width: 260px;
+            height: 800px;
+            background-color: white;
+            border-radius: 18px;
+            text-align: center;
+            padding: 38px 20px;
+            flex-shrink: 0;
+        }
+        /*Profile Picture*/
+        .card img{
+            width: 185px;
+            height: 185px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 35px;
+        }
+        /*Name-ID selector*/
+        #rahul{
+            color: #061a91;
+            font-size: 36px;
+            margin: 0 0 42px;
+        }
+        #vanshika{
+            color: green;
+            font-size: 36px;
+            margin: 0 0 42px;
+        }
+        #aman{
+            color: #990000;
+            font-size: 36px;
+            margin: 0 0 42px;
+        }
+        /*Role-CLASS selector*/
+        .role{
+            color: blue;
+            font-size: 27px;
+            margin: 0 0 38px;
+        }
+        /*Bio*/
+        .bio{
+            color: black;
+            font-size: 24px;
+            line-height: 1.45;
+            margin: 0;
+        }
+        /*Desktop par center*/
+        @media(min-width: 900px){
+            .team{
+                width: 100%;
+                justify content: center;
+            }
+        }
+
+        ]
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Team</h1>
+
+    <div class="team">
+
+        <!--card 1-->
+        <div class="card">
+            <img src="https://i.pravatar.cc/185?img=12"alt="Rahul Sharma">
+
+            <h2 id="rahul">
+                Rahul<br>Sharma
+            </h2>
+            <h3 class="role">
+                web<br>Developer
+            </h3>
+
+            <p class="bio">
+                Passionate about creating simple and user-friendly websites.
+            </p>
+
+        </div>
+        <!--Card 2-->
+        <div class="card">
+
+            <img src="https://i.pravatar.cc/185?img=47"alt="Vanshika Singh">
+
+            <h2 id="vanshika">
+                Vanshika<br>Singh
+            </h2>
+            <h3 class="role">
+                UI Designer
+            </h3>
+
+            <p class="bio">
+                Creative designer who enjoys making clean and attractive designs.
+            </p>
+        </div>
+
+        <!--Card 3-->
+        <div class="card">
+
+            <img src="https://i.pravatar.cc/185?img=11"alt="Aman Kumar">
+
+            <h2 id="aman">
+                Aman<br>Kumar
+            </h2>
+
+            <h3 class="role">
+                Software<br>Engineer
+            </h3>
+
+            <p class="bio">
+                Interested in programming and solving real-world problems.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
